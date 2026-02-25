@@ -12,8 +12,10 @@ public class DesafioCalculadora {
 
         System.out.println("Digite o segundo número: \n");
         double num2 = teclado.nextDouble();
+        teclado.nextLine(); // Para limpar o buffer
 
         System.out.println("Qual operação deseja  calcular: [ + , - , * , / , % ]");
+        
         String operacao = teclado.nextLine().trim();
 
         String resultado =
@@ -31,4 +33,26 @@ public class DesafioCalculadora {
 
     teclado.close();
     }
+} 
+
+/* 
+
+// Resposta do professor:
+
+//Lógica
+        String operacao = teclado.next();
+
+        double resultado = "+".equals(operacao) ? num1 + num2 : 0;
+        resultado = "-".equals(operacao) ? num1 - num2 : resultado;
+        resultado = "*".equals(operacao) ? num1 * num2 : resultado;
+        resultado = "/".equals(operacao) ? num1 / num2 : resultado;
+        resultado = "%".equals(operacao) ? num1 % num2 : resultado;
+
+        System.out.printf("%.2f %s %.2f = %.2f", num1, operacao, num2, resultado);
+        teclado.close();
+
+    }
 }
+
+*/
+
