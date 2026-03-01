@@ -6,16 +6,21 @@ public class If {
         
         System.out.println("Informe a média: ");
         double media = scanner.nextDouble();
-        if (media <= 10 && media >= 7.0) {
+
+        // Se tiver várias expressões, o ideal é quebrar em variáveis para facilitar a leitura do código
+      
+        boolean criterioAprovacao = media <= 10 && media >= 7.0;
+        if (criterioAprovacao) {
             System.out.println("Aluno aprovado!");
             System.out.println("Parabéns!");
         }
-
-        if (media < 7 && media >= 4.5){
+        boolean criterioRecuperacao = media < 7 && media >= 4.5;
+        if (criterioRecuperacao){
             System.out.println("Aluno em recuperação!");
         }
-
-        if (media < 4.5 && media >= 0){
+        
+        boolean criterioReprovacao = media < 4.5 && media >= 0;
+        if (criterioReprovacao){
             System.out.println("Aluno reprovado!");
         }
         
