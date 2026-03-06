@@ -23,6 +23,6 @@ public class IfElseIF {
 
         scanner.close();
         
-    }
+}
 }
 
